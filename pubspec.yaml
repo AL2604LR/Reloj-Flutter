@@ -1,0 +1,35 @@
+name: reloj_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  intl: ^0.17.0
+  window_size: ^0.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.9.2
+  
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/sprite_1.png
+    - assets/sprite_2.png
+    - assets/sprite_3.png
+    - assets/sprite_4.png
+    - assets/sprite_5.png
+    - assets/sprite_6.png
+
+flutter_icons:
+  ios: true
+  windows: true
+  image_path: "assets/sprite_1.png"
