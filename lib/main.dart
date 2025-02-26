@@ -12,9 +12,9 @@ void main() async {
 
   if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
     setWindowTitle('Reloj App');
-    setWindowMinSize(const Size(600, 600));
-    setWindowMaxSize(const Size(600, 600));
-    setWindowFrame(const Rect.fromLTWH(0, 0, 600, 600));
+    setWindowMinSize(const Size(350, 350));
+    setWindowMaxSize(const Size(350, 350));
+    setWindowFrame(const Rect.fromLTWH(0, 0, 350, 350));
   }
 
   runApp(const MainApp());
@@ -85,7 +85,7 @@ class _MainAppState extends State<MainApp> with SingleTickerProviderStateMixin {
                 Text(
                   _dateString,
                   style: const TextStyle(
-                    fontSize: 48,
+                    fontSize: 22,
                     fontFamily: 'Comic Sans MS',
                     color: Color(0xFF1C1C1C),
                   ),
@@ -93,7 +93,7 @@ class _MainAppState extends State<MainApp> with SingleTickerProviderStateMixin {
                 Text(
                   _timeString,
                   style: const TextStyle(
-                    fontSize: 48,
+                    fontSize: 22,
                     fontFamily: 'Comic Sans MS',
                     color: Color(0xFF1C1C1C),
                   ),
@@ -102,7 +102,7 @@ class _MainAppState extends State<MainApp> with SingleTickerProviderStateMixin {
                 AnimatedBuilder(
                   animation: _animation,
                   builder: (context, child) {
-                    return Image.asset('assets/sprite_${_animation.value + 1}.png');
+                    return Image.asset('assets/sprite_${_animation.value + 1}.png', width: 200, height: 200);
                   },
                 ),
               ],
