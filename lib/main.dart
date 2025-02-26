@@ -12,8 +12,9 @@ void main() async {
 
   if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
     setWindowTitle('Reloj App');
-    setWindowMinSize(const Size(800, 800));
-    setWindowMaxSize(const Size(800, 800));
+    setWindowMinSize(const Size(600, 600));
+    setWindowMaxSize(const Size(600, 600));
+    setWindowFrame(const Rect.fromLTWH(0, 0, 600, 600));
   }
 
   runApp(const MainApp());
